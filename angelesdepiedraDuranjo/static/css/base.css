@@ -72,4 +72,6 @@ nav li:first-child a{
 
 .smaller{
 		background-size: 180px 94px;
+		width: 180px;
+		height: 94px;
 }

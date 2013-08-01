@@ -66,9 +66,6 @@ Duranjo Web
 							<li class="bcorreo"></li>
 						</ul>	
 					</div>	
-				<div class="sectionContacto">
-					<div class="opcionContacto">Correo: contacto@angelesdepiedra.com.ve</div>
-				</div>
 				{% if success %}
 				<div class="mensajeenviado">
 					<div class="enviado">Su mensaje ha sido enviado correctamente, pronto nos pondremos en contacto con usted.</div>
@@ -76,8 +73,8 @@ Duranjo Web
 				</div>
 				{% else %}
 				<form  class="cizquierda" action="#" method="POST">
-					<div class="tituloContacto">Formulario:</div>
-					<div class="sectionContacto">						
+					<div class="columnacontacto">	
+	
 						{% csrf_token %}
 						<div class="campo">
 							{{ field.errors }}
@@ -98,7 +95,7 @@ Duranjo Web
 							{{ form.telefono.errors }}
 						</div>
 					</div>
-					<div class="sectionContacto">
+					<div class="columnacontacto">
 						<div class="textareaDescripcion campo">
 						{{ field.errors }}
 						<label for="texto">Mensaje: </label>

@@ -18,7 +18,7 @@
 .textonosotros{
 	width: 44%;
 	text-align: justify;
-	padding: 23px 0 0 0;
+	padding: 40px 0 0 0;
 	color: white;
 }
 
@@ -85,6 +85,7 @@
 	vertical-align: top;
 	height:110px;
 	background: url('../img/lineacontacto.png')  no-repeat;
+	margin-bottom: 31px;
 }
 .contacto{
 	display: inline-block;
@@ -128,4 +129,35 @@
 .logos{
 	display: inline-block;
 	width: 100%;
+}
+
+.cizquierda{
+	width: 80%;
+	color: white;
+}
+.columnacontacto{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+.campo label{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+.campo input{
+	display: inline-block;
+	width: 84%;
+	height: 26px;
+	margin-bottom: 16px;
+	background-color: rgb(205, 229, 255);
+	opacity: 0.6;
+	border-radius: 9px;
+}
+.campo textarea{
+	background-color: white;
+	opacity: 0.6;
+	width: 100%;
+	border-radius: 9px;
 }
