@@ -8,14 +8,17 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/PIE.js"></script>
 <![endif]-->
-<meta name="keywords" content="Diseño Web,Software,Gráfico,Páginas web,Venezuela,Maracaibo,Presupuesto,Planes, sitio web">
+<meta name="keywords" content="productora, cine, television, radio, venezuela, zulia, audiovisual, cortometrajes">
 <meta name="author" content="José Ordoñez, Diana Chavez y Elibeth Quiñones">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 {% block head %} {% endblock%}
 <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico">
 <title>{% block title %} {% endblock%}</title>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Overlock+SC' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block css %}
 {% endblock %}
 {% block js %}
@@ -33,16 +36,21 @@
 	  ga('send', 'pageview');
 	</script> -->
 	<header id="home" class="cabecera">
-		<div class="wrapper">				
+		<div class="barraazul"> 
+			<div class="wrapper">
+				<div class="logo"></div>				
 			<nav class="barraNavegacion">
 				{% block navi %} {% endblock%}
 			</nav>
 		</div>
+		</div>
+
 	</header>
 	<section class="contenido">
 		{% block contenido %} {% endblock%}
 	</section>
 	{% block clear %} {% endblock %}
+
 	<footer>
 		{% block footer %}{% endblock%}
 		<div class="wrapper">

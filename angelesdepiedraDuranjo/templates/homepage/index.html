@@ -13,28 +13,106 @@ Duranjo Web
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/stickymenu.js"></script>
 {% endblock %}
 {% block navi %}
 		<ul>
 			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-			<li class="works"><a href="{% url 'homepageworks' %}">Trabajos</a></li>
-			<li class="services"><a href="{% url 'homepageservices' %}">Servicios</a></li>
+			<li class="works"><a href="{% url 'homepageworks' %}">Nosotros</a></li>
+			<li class="services"><a href="{% url 'homepageservices' %}">Producciones</a></li>
 			<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
 		</ul>				
 {% endblock %}
 {% block clear %}{% endblock%}
 {% block contenido %}
-	<section class="bannerPrincipal">
-		<h1>Titulo importante</h1>
-		<div class="wrapper banner1">
+<div class="wrapper">
+	<div class="botonesSociales">
+		<ul>	
+			<li class="bface"></li>
+			<li class="btwitter"></li>
+			<li class="bcorreo"></li>
+		</ul>
+	</div>	
+		<section class="bannerPrincipal">
+			<div class="wrapper banner1">
+			</div>
+		</section>
+		<section class="nosotros">	
+			<div class="titulonosotros"> <h2> Nosotros</h2></div>
+			<div class="textonosotros"> Un texto es una composición de signos codificado en un sistema de escritura (como un alfabeto) que forma una unidad de sentido . Su tamaño puede ser variable. También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</div>
+		</section>
+</div>		
+		<section class="producciones">	
+		<div class="fondotransparente"></div>	
+			<div class="wrapper">
+				<div class="conbuenpie"></div>
+				<div class="showtime"></div>
+			</div>
+		</section>
+	<section class="ultimasnoticias"></section>
+	<div class="topcontacto"></div>
+	<section id="contacto" class="contacto">
+		<div class="contacto">
+			<div class="wrapper">
+				<div class="lineacontacto"><h2 class="titulocontacto">Contacto</h2></div>
+					<div class="botonesSociales" id="socialcontacto">
+						<ul>	
+							<li class="bface"></li>
+							<li class="btwitter"></li>
+							<li class="bcorreo"></li>
+						</ul>	
+					</div>	
+				<div class="sectionContacto">
+					<div class="opcionContacto">Correo: contacto@angelesdepiedra.com.ve</div>
+				</div>
+				{% if success %}
+				<div class="mensajeenviado">
+					<div class="enviado">Su mensaje ha sido enviado correctamente, pronto nos pondremos en contacto con usted.</div>
+					<img class="sobre" src="{{ STATIC_URL }}img/sobre.png" alt="formulario de contacto">	
+				</div>
+				{% else %}
+				<form  class="cizquierda" action="#" method="POST">
+					<div class="tituloContacto">Formulario:</div>
+					<div class="sectionContacto">						
+						{% csrf_token %}
+						<div class="campo">
+							{{ field.errors }}
+							<label for="nombre">Nombre:</label>
+							{{ form.nombre }}
+							{{ form.nombre.errors }}
+						</div>
+						<div class="campo">				
+							{{ field.errors }}
+							<label for="email">Correo Electrónico:</label>
+							{{ form.email }}
+							{{ form.email.errors }}
+						</div>
+						<div class="campo">
+							{{ field.errors }}
+							<label for="telefono">Teléfono:</label>
+							{{ form.telefono }}
+							{{ form.telefono.errors }}
+						</div>
+					</div>
+					<div class="sectionContacto">
+						<div class="textareaDescripcion campo">
+						{{ field.errors }}
+						<label for="texto">Mensaje: </label>
+						{{ form.texto }}
+						{{ form.texto.errors }}
+						</div>
+						<div class="botonEnviar">
+							<input type="submit">
+						</div>
+					</div>
+				</form>
+			{% endif %}
+			</div>
 		</div>
-	</section>
-	<section class="ofrecemos">		
-	</section>
-	<section class="aboutus">		
-	</section>
-	<section class="infoContacto">
+		<div class="fondologo"></div>
 	</section>	
+</div>	
+
 	<!-- Google+ SCRIPT --> 
 		<!-- Place this tag after the last badge tag. -->
 		<script  async type="text/javascript">

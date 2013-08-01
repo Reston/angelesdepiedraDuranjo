@@ -1,0 +1,114 @@
+
+.botonesSociales{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+ 	text-align: right;
+ 	padding: 15px 0 61px 0;
+
+}
+.botonesSociales ul{
+	display: inline-block;
+	width: 50%;
+}
+.botonesSociales ul li{
+	text-decoration: none;
+	display: inline-block;
+}
+.textonosotros{
+	width: 44%;
+	text-align: justify;
+	padding: 23px 0 0 0;
+	color: white;
+}
+
+.bface{
+	width: 36px;
+	height: 44px;
+	background: url('../img/sociales.png') no-repeat;
+	padding-right: 15px;
+}
+.titulonosotros{
+	padding: 20px 0 0 69px; 
+}
+.btwitter{
+	width: 36px;
+	height: 44px;
+	background: url('../img/sociales.png') -55px no-repeat;
+	padding-right: 15px;
+}
+.bcorreo{
+	width: 43px;
+	height: 44px;
+	background: url('../img/sociales.png') -109px no-repeat;
+}
+
+.banner1{
+	background-color: black;
+	width: 100%;
+	height: 300px;
+}
+.nosotros{
+	width: 100%;
+	height: 437px;
+	background: url('../img/nosotros.png') no-repeat;
+	padding-bottom: 36px;
+}
+.fondotransparente{
+	position: absolute;
+	width: 100%;
+	height:  300px;
+	background-color: rgb(158, 147, 147);
+	opacity: 0.2;
+	z-index: 1;
+}
+.conbuenpie{
+	position: relative;
+	display: inline-block;
+	width: 456px;
+	height: 219px;
+	background: url('../img/logos.png') -333px no-repeat;
+	z-index: 2;
+}
+.showtime{
+	position: relative;
+	display: inline-block;
+	width:  525px;
+	height: 292px;
+	background: url('../img/logos.png') -800px no-repeat;
+	z-index: 2;
+}
+.lineacontacto{
+	display: inline-block;
+	width: 466px;
+	height:110px;
+	background: url('../img/lineacontacto.png')  no-repeat;
+}
+.contacto{
+	display: inline-block;
+	width: 100%;
+	margin-top: -2px;
+	background: url('../img/fcontacto.png');
+}
+.topcontacto{
+	display: inline-block;
+	width: 100%;
+	height: 52px;
+	background: url('../img/topcontacto.png');
+}
+.titulocontacto{
+	padding: 19px;
+}
+.ultimasnoticias{
+	width: 100%;
+	height: 300px;
+}
+#socialcontacto{
+	width: 50%;
+	text-align: left;
+}
+.fondologo{
+	width: 359px;
+	height: 329px;
+	background: url('../img/logofondo.png');
+}
