@@ -9,11 +9,13 @@ Duranjo Web
 {% endblock%}
 {% block css%}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}css/refineslide.css">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/stickymenu.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/refineslide/jquery.refineslide.min.js"></script>
 {% endblock %}
 {% block navi %}
 		<ul>
@@ -34,7 +36,13 @@ Duranjo Web
 		</ul>
 	</div>	
 		<section class="bannerPrincipal">
-			<div class="wrapper banner1">
+			<div class="wrapper">
+				<ul class="rs-slider">
+	   				 <li><img src="{{ STATIC_URL }}img/img1.jpg" alt="" />
+	   				         <div class="rs-caption rs-bottom"></li>
+	    			<li><img src="{{ STATIC_URL }}img/img2.jpg" alt="" /></li>
+	    			<li><img src="{{ STATIC_URL }}img/img3.png" alt="" /></li>
+				</ul>
 			</div>
 		</section>
 		<section class="nosotros">	
@@ -113,6 +121,16 @@ Duranjo Web
 
 	</section>	
 </div>	
+
+<!-- slider -->
+<script>
+    $(function () {
+        $('.rs-slider').refineSlide({
+            maxWidth: 1000,
+            autoPlay           : true, // set to native image width (px)
+        });
+    });
+</script>
 
 	<!-- Google+ SCRIPT --> 
 		<!-- Place this tag after the last badge tag. -->

@@ -126,6 +126,9 @@
 	text-align: center;
 	margin-bottom: 26px;
 }
+.bannerPrincipal{
+	margin-bottom: 20px;
+}
 .logos{
 	display: inline-block;
 	width: 100%;
@@ -148,7 +151,7 @@
 
 .campo input{
 	display: inline-block;
-	width: 84%;
+	width: 71%;
 	height: 26px;
 	margin-bottom: 16px;
 	background-color: rgb(205, 229, 255);
