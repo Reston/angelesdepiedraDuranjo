@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.comments',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
@@ -132,7 +133,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'tagging',
+    'mptt',
+    'zinnia',
 )
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -171,7 +176,6 @@ TEMPLATE_CONTEXT_PROCESSOR = (
     'django.core.context_processors.csrf',
     'django.core.context_processors.static',
 )
-
 
 #Configuraciones para enviar mensajes usando gmail
 EMAIL_USE_TLS = True

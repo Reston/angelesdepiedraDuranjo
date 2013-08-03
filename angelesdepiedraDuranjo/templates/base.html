@@ -53,10 +53,29 @@
 
 	<footer>
 		{% block footer %}{% endblock%}
-		<div class="wrapper">
+		<div class="wrapper footercontenido">
 			<div class="footer-der">
+				<div class="logoblanco"></div>
+				
+			</div>
+			<div class="footer-med">
+				<ul class="listaMenuFooter">
+			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+			<li class="works"><a href="{% url 'homepageindex' %}#nosotros" >Nosotros</a></li>
+			<li class="services"><a href="{% url 'homepageindex' %}#producciones">Producciones</a></li>
+			<li class="contact"><a href="{% url 'homepageindex' %}#contacto">Contacto</a></li>
+
+				</ul>
+			<div class="copyright">Copyright © 2013, Todos los derechos reservados.</div>
 			</div>
 			<div class="footer-izq">
+				Diseño y Desarrollo por:
+				<div class="logoDuranjo">
+					<a href="http://duranjo.com/">
+						<img src="{% static 'img/duranjowhite.png' %}" alt="Duranjo Web C.A. Logo">
+					</a>
+
+				</div>
 			</div>		  
 		</div>
 	</footer>

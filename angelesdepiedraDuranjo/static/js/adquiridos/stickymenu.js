@@ -11,7 +11,7 @@ $( document ).ready(function() {
 		var altura_del_menu = $('.barraazul').outerHeight(true);
 
 		if ($(window).scrollTop()){
-			if ($(window).scrollTop() >= 200){
+			if ($(window).scrollTop() >= 80){
 				$('.logo').addClass('smaller');
 			}
 			$('.barraazul').addClass('fixed');

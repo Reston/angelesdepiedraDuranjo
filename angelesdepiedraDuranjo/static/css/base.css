@@ -17,6 +17,14 @@ h2{
 	margin: 0 auto 0 auto;
 }
 
+footer{
+	background-color: #3131FF;
+	display: inline-block;
+	width: 100%;
+	border-top: 5px solid #7575DB;
+	color:white;
+}
+
 header{
 	display: inline-block;
 	width: 100%;
@@ -28,6 +36,7 @@ header{
 	background-color: #3131FF;
 	width: 100%;
 	height: 40px;
+	opacity: 0.8;
 }
 
 nav{
@@ -75,3 +84,101 @@ nav li:first-child a{
 		width: 180px;
 		height: 94px;
 }
+
+/* Configuración back to top button */
+
+.back-top {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+.back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+.back-top a:hover {
+	color: #000;
+}
+
+	/* arrow icon (span tag) */
+.back-top span {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: 0 auto 7px auto;
+	font-size: 0;
+	background: rgb(75, 75, 75) url(../img/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+.back-top a:hover span {
+	background-color: #777;
+}
+
+/* FOOTER */
+
+.fraseFooter{
+	text-align: center;
+	margin: 0;
+	padding: 25px 0;
+	font-size: 2em;
+}
+.footer-der, .footer-med,.footer-izq {
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-izq, .footer-der{
+	width: 25%;
+	text-align: right;
+}
+.footer-med{
+	width: 48%;
+	text-align: center;
+}
+.footercontenido{
+	margin-top: 29px;
+}
+.copyright{
+	padding-top: 29px;
+	height: 50px;
+}
+
+.listaMenuFooter ul{
+	margin:0;
+	padding: 0;
+}
+.listaMenuFooter li{
+	display: inline-block;
+}
+.listaMenuFooter a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	margin-right: 25px;
+	text-transform: uppercase;
+}
+.logoblanco{
+	background: url(../img/angeleslogoblanco.png) no-repeat 0 0;
+	height: 95px;
+	margin: 0 auto 0 auto;
+	}

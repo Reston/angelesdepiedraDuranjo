@@ -20,9 +20,9 @@ Duranjo Web
 {% block navi %}
 		<ul>
 			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-			<li class="works"><a href="{% url 'homepageworks' %}">Nosotros</a></li>
-			<li class="services"><a href="{% url 'homepageservices' %}">Producciones</a></li>
-			<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+			<li class="works"><a href="{% url 'homepageindex' %}#nosotros" >Nosotros</a></li>
+			<li class="services"><a href="{% url 'homepageindex' %}#producciones">Producciones</a></li>
+			<li class="contact"><a href="{% url 'homepageindex' %}#contacto">Contacto</a></li>
 		</ul>				
 {% endblock %}
 {% block clear %}{% endblock%}
@@ -45,12 +45,12 @@ Duranjo Web
 				</ul>
 			</div>
 		</section>
-		<section class="nosotros">	
+		<section class="nosotros" id="nosotros">	
 			<div class="titulonosotros"> <h2> Nosotros</h2></div>
 			<div class="textonosotros"> Un texto es una composición de signos codificado en un sistema de escritura (como un alfabeto) que forma una unidad de sentido . Su tamaño puede ser variable. También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</div>
 		</section>
 </div>		
-		<section class="producciones">	
+		<section class="producciones" id="producciones">	
 		<div class="fondotransparente"></div>	
 			<div class="wrapper">
 				 <div class="logostitulo"><h2> Visítanos también en:</h2></div>
@@ -60,8 +60,25 @@ Duranjo Web
 				</div>
 			</div>
 		</section>
-	<section class="ultimasnoticias"></section>
-	<div class="topcontacto"></div>
+	<section class="ultimasnoticias">
+		<div class="wrapper">
+			 <div class="logostitulo"><h2> Publicaciones Recientes:</h2></div>
+			 <div class="entradas">
+			 	{% for item in entradas %}
+			 	<a href="{{ item.get_absolute_url }}">
+			 		<div class="publicacion">
+			 			<img src="{{ MEDIA_URL }}{{item.image}}" width ="230" height="174">
+			 		   	<div class="titulopublicacion">{{ item.title }}</div>
+			 	   </div>
+				</a>
+				 {% endfor %}
+			</div>
+			
+
+		<a href="/weblog">Blog</a>
+	</div>
+	</section>
+	<div id="contacto" class="topcontacto"></div>
 	<section id="contacto" class="contacto">
 		<div class="fondologo"></div>
 		<div class="contacto">

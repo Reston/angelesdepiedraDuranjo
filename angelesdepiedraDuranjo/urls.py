@@ -14,6 +14,8 @@ urlpatterns = patterns(
 	# url(r'^$', 'angelesdepiedraDuranjo.views.home', name='home'),
 	# url(r'^angelesdepiedraDuranjo/', include('angelesdepiedraDuranjo.foo.urls')),
 	url(r'^', include('angelesdepiedraDuranjo.apps.homepage.urls')),
+	url(r'^weblog/', include('zinnia.urls')),
+	url(r'^comments/', include('django.contrib.comments.urls')),
 	# Uncomment the admin/doc line below to enable admin documentation:
 	# url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
