@@ -18,7 +18,7 @@ h2{
 }
 
 footer{
-	background-color: #3131FF;
+	background-color: #324F9D;
 	display: inline-block;
 	width: 100%;
 	border-top: 5px solid #7575DB;
@@ -33,10 +33,9 @@ header{
 }
 .barraazul{
 	position: absolute;
-	background-color: #3131FF;
+	background-color: #324F9D;
 	width: 100%;
 	height: 40px;
-	opacity: 0.8;
 }
 
 nav{
@@ -182,3 +181,18 @@ nav li:first-child a{
 	height: 95px;
 	margin: 0 auto 0 auto;
 	}
+
+	@media screen and (max-width: 1000px){
+	.wrapper{
+		width: 100%;
+	}
+	.logo{
+	background-size: 180px 94px;
+	width: 180px;
+	height: 94px;
+	}
+	nav ul li{
+		font-size: 12px;
+		padding-left: 4px;
+	}
+}

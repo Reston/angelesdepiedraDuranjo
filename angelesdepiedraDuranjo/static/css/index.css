@@ -29,7 +29,7 @@
 	padding-right: 15px;
 }
 .titulonosotros{
-	padding: 20px 0 0 69px; 
+	padding: 85px 0 0 69px;
 }
 .btwitter{
 	width: 36px;
@@ -48,36 +48,69 @@
 	width: 100%;
 	height: 300px;
 }
+.cintablue{
+	margin-top: -115px;
+	margin-bottom: 80px;
+	width: 100%;
+	height: 34px;
+	background: url('../img/nosotros.png') no-repeat;
+}
 .nosotros{
 	width: 100%;
 	height: 437px;
 	background: url('../img/nosotros.png') no-repeat;
-	padding-bottom: 36px;
+	padding-bottom: 154px;
 }
 .fondotransparente{
 	position: absolute;
 	width: 100%;
-	height: 357px;
+	height: 285px;
 	background-color: rgb(158, 147, 147);
 	opacity: 0.2;
 	z-index: 1;
 }
-.conbuenpie{
+.hombre{
 	position: relative;
 	display: inline-block;
-	width: 414px;
-	height: 252px;
-	margin-right: 184px;
-	background: url('../img/logos.png') no-repeat;
+	width: 283px;
+	height: 275px;
+	background: url('../img/logofondo.png') -359px 3px no-repeat;
 	z-index: 2;
+	vertical-align: top;
+	margin-top: 10px;
+}
+.botonshow{
+	display: block;
+	margin-top: 38px;
+	background-color: #E00B70;
+	width: 54%;
+	height: 37px;
+	line-height: 37px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	-moz-box-shadow: 9px 9px 11px #000;
+	-webkit-box-shadow: 9px 9px 11px #000;
+	box-shadow: 9px 9px 11px #000;
+}
+.textoshowtime{
+	display: inline-block;
+	width: 41%;
+	vertical-align: top;
+	padding-top: 7px;
+	color: rgb(146, 146, 161);
+	text-transform: uppercase;
+	word-spacing: 7px;
+	text-align: center;
 }
 .showtime{
 	position: relative;
 	display: inline-block;
-	width: 248px;
+	width: 284px;
 	height: 300px;
-	background: url('../img/logos.png') -406px no-repeat;
+	background: url('../img/logos.png') no-repeat;
 	z-index: 2;
+	margin-top: 23px;
 }
 .lineacontacto{
 	display: inline-block;
@@ -93,6 +126,10 @@
 	margin-top: -2px;
 	background: url('../img/fcontacto.png');
 }
+.botonEnviar{
+	text-align: right;
+	padding: 10px 0 44px 0;
+}
 .topcontacto{
 	display: inline-block;
 	width: 100%;
@@ -106,7 +143,7 @@
 }
 .ultimasnoticias{
 	width: 100%;
-	height: 578px;
+	padding-bottom: 120px;
 	background-position: center;
 	background: url('../img/lineas.png') no-repeat center;
 }
@@ -124,16 +161,26 @@
 .logostitulo{
 	display: inline-block;
 	width: 100%;
-	height: 42px;
+	vertical-align: top;
+	height: 83px;
 	text-align: center;
 	margin-bottom: 26px;
 }
-.bannerPrincipal{
-	margin-bottom: 20px;
-}
+
 .logos{
 	display: inline-block;
 	width: 100%;
+}
+.fecha{
+	width: 95px;
+	text-align: center;
+	color: white;
+	height: 34px;
+	background-color: #324F9D;
+	z-index: 2;
+	opacity: 0.8;
+	position: absolute;
+	padding-top: 11px;
 }
 
 .cizquierda{
@@ -165,13 +212,65 @@
 	opacity: 0.6;
 	width: 100%;
 	border-radius: 9px;
+	height: 172px;
+}
+.botonEnviar input{
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background-color: transparent;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color: #DADADA;
+	font-weight: bold;
+	padding: 3px 33px;
+	text-decoration: none;
 }
 .publicacion{
 	display: inline-block;
-	width: 24%;
+	width: 33%;
+	vertical-align: top;
+	padding-top: 35px;
+	max-height: 361px;
+	overflow: hidden;
+	margin-bottom: 11px;
+}
+.irblog{
+	float: right;
+	color: rgb(156, 148, 148);
+	margin-right: 29px;
+	text-decoration: none;
 }
 .entradas{
 	margin-top: 79px;}
 .titulopublicacion {
 	text-decoration: none;
+	margin-top: 15px;
+	padding-bottom: 10px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+@media screen and (max-width: 1000px){
+	.cintablue{
+		width: 0px;
+	}
+	.ultimasnoticias{
+		padding: 0
+	}
+	.fondologo{
+		width: 0px;
+	}
+	.columnacontacto{
+	width: 90%;
+	margin-left: 16%;
+	text-align: center;
+	}
+	#socialcontacto{
+		width: 100%;
+		text-align: center;
+	}
 }

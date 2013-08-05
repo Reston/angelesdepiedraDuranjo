@@ -11,6 +11,17 @@
     visibility: hidden;
 }
 
+
+.rs-thumb-wrap {
+    width: 90%;
+    padding-left: 5%;
+    margin-top: 66px;
+    padding-right: 5%;
+    background-color: #324F9D;
+}
+ul,ol{
+    padding:0 0 0 0 !important;}
+
 /* ===[ Slider ]=== */
 
 .rs-wrap {
@@ -157,3 +168,18 @@
 	.rs-caption { opacity: 0!important; }
 }
 */
+@media screen and (max-width: 1000px){
+    .rs-thumb-wrap{
+    margin-top: 0px;
+    background-color:inherit;
+}
+.textonosotros{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.publicacion{
+    width: 100%;
+    text-align: center;
+}
+{

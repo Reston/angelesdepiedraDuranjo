@@ -38,11 +38,13 @@ Duranjo Web
 		<section class="bannerPrincipal">
 			<div class="wrapper">
 				<ul class="rs-slider">
-	   				 <li><img src="{{ STATIC_URL }}img/img1.jpg" alt="" />
+	   				 <li><img src="{{ STATIC_URL }}img/img1.png" alt="" width="1000"/>
 	   				         <div class="rs-caption rs-bottom"></li>
-	    			<li><img src="{{ STATIC_URL }}img/img2.jpg" alt="" /></li>
-	    			<li><img src="{{ STATIC_URL }}img/img3.png" alt="" /></li>
+	    			<li><img src="{{ STATIC_URL }}img/img2.png" alt="" width="1000" /></li>
+	    			<li><img src="{{ STATIC_URL }}img/img3.png" alt="" width="1000"/></li>
+	    			<li><img src="{{ STATIC_URL }}img/img4.png" alt="" width="1000"/></li>
 				</ul>
+			<div class="cintablue"></div>
 			</div>
 		</section>
 		<section class="nosotros" id="nosotros">	
@@ -53,11 +55,13 @@ Duranjo Web
 		<section class="producciones" id="producciones">	
 		<div class="fondotransparente"></div>	
 			<div class="wrapper">
-				 <div class="logostitulo"><h2> Visítanos también en:</h2></div>
-				 <div class="logos">
-					<div class="conbuenpie"></div>
-					<div class="showtime"></div>
-				</div>
+				 <div class="hombre"></div>
+				 <div class="textoshowtime">
+				 	<div class="logostitulo"><h2> ShowTime</h2></div>
+				 	No te pierdas nuestro programa de radio y televisión "ShowTime" transmitido por GlobalTV y Feria 106.9s
+				 	<div class="botonshow">IR AL SITIO WEB</div>
+				 </div>
+  			     <div class="showtime"></div>
 			</div>
 		</section>
 	<section class="ultimasnoticias">
@@ -67,7 +71,8 @@ Duranjo Web
 			 	{% for item in entradas %}
 			 	<a href="{{ item.get_absolute_url }}">
 			 		<div class="publicacion">
-			 			<img src="{{ MEDIA_URL }}{{item.image}}" width ="230" height="174">
+			 			<div class="fecha">{{ item.creation_date|date:"SHORT_DATE_FORMAT" }}</div>
+			 			<img src="{{ MEDIA_URL }}{{item.image}}" width ="304" height="230">
 			 		   	<div class="titulopublicacion">{{ item.title }}</div>
 			 	   </div>
 				</a>
@@ -75,7 +80,7 @@ Duranjo Web
 			</div>
 			
 
-		<a href="/weblog">Blog</a>
+		<a class="irblog" href="/weblog">Ver todo </a>
 	</div>
 	</section>
 	<div id="contacto" class="topcontacto"></div>
@@ -97,7 +102,7 @@ Duranjo Web
 					<img class="sobre" src="{{ STATIC_URL }}img/sobre.png" alt="formulario de contacto">	
 				</div>
 				{% else %}
-				<form  class="cizquierda" action="#" method="POST">
+				<form  class="cizquierda" action="#contacto" method="POST">
 					<div class="columnacontacto">	
 	
 						{% csrf_token %}
