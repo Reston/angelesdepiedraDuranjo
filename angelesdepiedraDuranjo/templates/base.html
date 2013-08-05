@@ -24,7 +24,7 @@
 {% block js %}
 {% endblock %}
 </head>
-<body>
+<body id="home">
 	<!-- Analytics SCRIPT GOOGLE! -->
 	<!--<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,16 +35,15 @@
 	  ga('create', 'UA-*********-1', '*******.com');
 	  ga('send', 'pageview');
 	</script> -->
-	<header id="home" class="cabecera">
+	<header class="cabecera fixed">
 		<div class="barraazul"> 
 			<div class="wrapper">
 				<div class="logo"></div>				
-			<nav class="barraNavegacion">
+			<nav id="menuSlow" class="barraNavegacion">
 				{% block navi %} {% endblock%}
 			</nav>
 		</div>
 		</div>
-
 	</header>
 	<section class="contenido">
 		{% block contenido %} {% endblock%}

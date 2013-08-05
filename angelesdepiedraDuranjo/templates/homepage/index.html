@@ -13,16 +13,16 @@ Duranjo Web
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/stickymenu.js"></script>
+<script async type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
+<script async type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/stickymenu.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/refineslide/jquery.refineslide.min.js"></script>
 {% endblock %}
 {% block navi %}
 		<ul>
-			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-			<li class="works"><a href="{% url 'homepageindex' %}#nosotros" >Nosotros</a></li>
-			<li class="services"><a href="{% url 'homepageindex' %}#producciones">Producciones</a></li>
-			<li class="contact"><a href="{% url 'homepageindex' %}#contacto">Contacto</a></li>
+			<li id="homeMenu" class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+			<li id="nosotrosMenu" class="works"><a href="{% url 'homepageindex' %}#nosotros" >Nosotros</a></li>
+			<li id="produccionesMenu" class="services"><a href="{% url 'homepageindex' %}#producciones">Producciones</a></li>
+			<li id="contactoMenu" class="contact"><a href="{% url 'homepageindex' %}#contacto">Contacto</a></li>
 		</ul>				
 {% endblock %}
 {% block clear %}{% endblock%}

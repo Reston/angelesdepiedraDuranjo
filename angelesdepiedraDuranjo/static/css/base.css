@@ -75,6 +75,7 @@ nav li:first-child a{
 	width: 310px;
 	height: 229px;
 	background: url('../img/logo.png') no-repeat;
+	background-size: contain; 
 	z-index: 2;
 }
 
