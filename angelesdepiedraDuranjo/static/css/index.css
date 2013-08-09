@@ -37,6 +37,10 @@
 	background: url('../img/sociales.png') -55px no-repeat;
 	padding-right: 15px;
 }
+.textoslide{
+	color: rgb(201, 190, 190);
+	font-size: 14px;
+}
 .bcorreo{
 	width: 43px;
 	height: 44px;
@@ -61,6 +65,32 @@
 	background: url('../img/nosotros.png') no-repeat;
 	padding-bottom: 154px;
 }
+.tituloslide{
+	text-transform: uppercase;
+}
+.rs-caption {
+padding: 20px;
+color: #fff;
+text-shadow: 0 -1px 0 #000;
+border: 1px solid #000;
+background: url(../img/black60.png);
+background: rgba(0, 0, 0, .6);
+background: -moz-linear-gradient(top, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7));
+background: -webkit-linear-gradient(top, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7));
+background: -o-linear-gradient(top, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7));
+background: -ms-linear-gradient(top, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7));
+background: linear-gradient(top, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7));
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
+box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
+}
+.rs-caption{
+	width: 50%;
+	opacity: 1;
+	transition: opacity 800ms linear;
+	-webkit-transition: opacity 800ms linear;
+	-webkit-backface-visibility: hidden;
+	}
 .fondotransparente{
 	position: absolute;
 	width: 100%;
@@ -83,7 +113,7 @@
 	display: block;
 	margin-top: 38px;
 	background-color: #E00B70;
-	width: 54%;
+	width: 166px;
 	height: 37px;
 	line-height: 37px;
 	margin-left: auto;
@@ -197,6 +227,11 @@
 	width: 100%;
 	margin-bottom: 4px;
 }
+.columnascotact{
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
 
 .campo input{
 	display: inline-block;
@@ -258,6 +293,29 @@
 	.cintablue{
 		width: 0px;
 	}
+	.nosotros{
+		height: auto;
+		padding-bottom: 39px;
+		background:inherit;
+	}
+	.titulonosotros{
+		text-align: center;
+		padding: 10px;
+	}
+	.logostitulo{
+		display: none;
+	}
+	.textoshowtime{
+		margin-top: 62px;
+		width: 39%;
+		word-spacing: inherit;
+	}
+	.textonosotros{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		padding: 0;
+	}
 	.ultimasnoticias{
 		padding: 0
 	}
@@ -272,5 +330,20 @@
 	#socialcontacto{
 		width: 100%;
 		text-align: center;
+	}
+	.centrar{
+		text-align: center;
+	}
+	.hombre{
+		width: 0px;
+	}
+	.botonshow{
+		margin-top: 16px;
+	}
+	.fondotransparente .wrapper{
+		text-align: center;
+	}
+	.campo input{
+		width: 66%;
 	}
 }

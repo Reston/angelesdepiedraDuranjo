@@ -137,7 +137,7 @@ padding-left:1.5em}.zinnia #footer{padding-top:1em;border-top:1px solid #eee}
 	.zinnia #widget-tags ul.tags .tag-6{font-size:2.8em;color:#000}
 	.zinnia #widget-populars a{display:block}
 	.zinnia #widget-search input[type=text]{
-	width: 67%;
+	width: 162px;
 	background-color: rgb(205, 229, 255);
 	opacity: 0.6;
 	border-radius: 9px;
@@ -158,7 +158,11 @@ padding-left:1.5em}.zinnia #footer{padding-top:1em;border-top:1px solid #eee}
 		{color:#666;padding-left:2em;
 			background:transparent url('../img/category.png?1317027277') no-repeat scroll 0.5em}
 			.zinnia .entry-body{text-align:justify;padding-right:0.5em;font-size:1.2em}
-			.zinnia .entry-body img,.zinnia .entry-body img.left{margin:0 1.5em 1.5em 0;float:left}
+			.zinnia .entry-body img,.zinnia .entry-body img.left{margin:0 1.5em 1.5em 0;float:left;
+			padding: 0.5em;
+border: 1px solid #eee;
+max-width: 100%;
+margin-left: -12px;}
 			.zinnia .entry-body img.right{margin:0 0 1.5em 1.5em;float:right}.zinnia .entry-body li
 			{list-style-image:none}.zinnia .entry-body pre,.zinnia .entry-body blockquote
 			{width:auto;overflow:auto;padding:1em;clear:none;float:none;background-color:#e9e9f3}
@@ -202,3 +206,8 @@ padding-left:1.5em}.zinnia #footer{padding-top:1em;border-top:1px solid #eee}
 	padding-top: 30px;
 }
 .tituloStyle{text-align: center;}
+
+/*@media screen and (max-width: 1000px){
+#content{
+	width: 70% !important;
+}}*/
