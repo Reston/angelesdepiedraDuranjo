@@ -68,7 +68,6 @@ nav li:first-child a{
     z-index: 10; 
 }
 
-
 .logo{
 	float: left;
 	margin-top: -15px;
@@ -197,3 +196,26 @@ nav li:first-child a{
 		padding-left: 4px;
 	}
 }
+@media screen and (max-width: 480px) {
+	h2{
+		font-size: 29px;
+	}
+	header{
+		height: 200px;
+	}
+	nav ul li{
+		display: block
+	}
+	.fixed{
+		position: inherit;
+	}
+	.barraNavegacion a {
+		display: block;
+		width: 93%;
+		background-color: #324F9D;
+		text-align: center;
+		padding: 30px 10px;
+		margin-bottom: 3px;
+	}
+
+	}

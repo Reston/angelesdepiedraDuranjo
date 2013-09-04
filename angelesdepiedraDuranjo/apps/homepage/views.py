@@ -11,7 +11,6 @@ def index(request):
 	success = False
 	entradas= Entry.objects.order_by('-creation_date')
 	entradas= entradas[:3]
-	print entradas[0].creation_date
 	if request.method == 'POST':
 		form = contactForm(request.POST)
 		if form.is_valid():

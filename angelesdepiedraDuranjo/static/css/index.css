@@ -16,10 +16,11 @@
 	display: inline-block;
 }
 .textonosotros{
-	width: 44%;
+	width: 42%;
 	text-align: justify;
 	padding: 40px 0 0 0;
-	color: white;
+	color: #FFF;
+	margin-left: 41px;
 }
 
 .bface{
@@ -123,6 +124,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 	-webkit-box-shadow: 9px 9px 11px #000;
 	box-shadow: 9px 9px 11px #000;
 }
+
 .textoshowtime{
 	display: inline-block;
 	width: 41%;
@@ -290,6 +292,9 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 	text-transform: uppercase;
 }
 @media screen and (max-width: 1000px){
+	.logo{
+		width: 168px !important;
+	}
 	.cintablue{
 		width: 0px;
 	}
@@ -302,7 +307,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 		text-align: center;
 		padding: 10px;
 	}
-	.logostitulo{
+	.logoshow{
 		display: none;
 	}
 	.textoshowtime{
@@ -345,5 +350,75 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 	}
 	.campo input{
 		width: 66%;
+	}
+	.footer-izq{
+		width: 33%;
+	}
+	.footer-med{
+		width: 25%;
+	}
+	.footer-der{
+		width: 40%;
+	}
+	.copyright{
+		display: none;
+	}
+	.listaMenuFooter li{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.bannerPrincipal{
+		margin-top: 13pc;
+	}
+	.logo {
+		height: 94px !important;
+		float: inherit;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1px;
+
+	}
+	.botonesSociales{
+		display: none;
+	}
+	.barraazul{
+		background: none;
+	}
+	.textoshowtime{
+		width: 90%;
+	}
+	.fondotransparente{
+		height: 542px;
+	}
+	.showtime{
+		width: 208px;
+		margin-top: -23px;
+		background-size: 224px 188px;
+	}
+	.ultimasnoticias img{
+		display: none;
+	}
+	.entradas{
+		margin-top: 0px;
+	}
+	.fecha{
+		width: 100%;
+		position: inherit;
+	}
+	.lineacontacto{
+		background: inherit;
+		height: 33px;
+	}
+	.campo input {
+		width: 100%;
+	}
+	.footer-izq, .footer-der, .footer-med{
+		width: 100%;
+		text-align: center;
+	}
+	.logoblanco {
+		background: url(../img/angeleslogoblanco.png) no-repeat center;
 	}
 }

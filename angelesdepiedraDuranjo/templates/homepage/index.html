@@ -5,7 +5,7 @@
 <meta name="description" content="">
 {% endblock%}
 {% block title %}
-Duranjo Web
+Ángeles de Piedra
 {% endblock%}
 {% block css%}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
@@ -29,8 +29,8 @@ Duranjo Web
 {% block contenido %}
 <div class="wrapper">
 	<div class="botonesSociales">
-		<ul>	
-			<li class="bface"></li>
+		<ul>
+			 <a href="https://www.facebook.com/angelesdepiedraproductora" target="_blank"><li class="bface"></li></a>
 			<li class="btwitter"></li>
 			<li class="bcorreo"></li>
 		</ul>
@@ -41,24 +41,27 @@ Duranjo Web
 	   				 <li><img src="{{ STATIC_URL }}img/img1.png" alt="" width="1000"/>
 	   				         <div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Jenny 24 Horas</h3>
-	   				         <p class="textoslide">Actores reinaldo jose perez, deive garces, fredy aquino, morella lopez un elenco espectacular. direccion Yonna Cabrera 2010. </p>
+	   				         <p class="textoslide">
+	   				         	Es la historia de una mujer que se debate entre la libertad y la protección de un hombre lleno de agresividad; con los grandes actores Reinaldo José Pérez, Morella López, Deive Garcés y Freddy Aquino. Dirección y actuación de Yonna Cabrera y música original de Agustín Espina, producción de Ángeles de Piedra.</p>
 	   				     </div>
 	   				         </li>
 	    			<li><img src="{{ STATIC_URL }}img/img2.png" alt="" width="1000" />
 	    					<div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Mejor Mañana</h3>
-	   				         <p class="textoslide">Actores reinaldo jose perez, deive garces, fredy aquino, morella lopez un elenco espectacular. direccion Yonna Cabrera 2010. </p>
+	   				         <p class="textoslide">
+	   				         	La enfermedad de Margarita ha barrido con la mayoría de sus recuerdos; Pero no es un impedimento para Astolfo quién permanece cerca jugueteando con su alma. Elenco Yonna Cabrera y Fredy Marín. Bajo la coproducción de Mata de Mangos Producciones y Ángeles de Piedra.</p>
 	   				     </div>
 	    			</li>
 	    			<li><img src="{{ STATIC_URL }}img/img3.png" alt="" width="1000"/>
 	    				   	 <div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Estragos del Tiempo</h3>
-	   				         <p class="textoslide">Actores reinaldo jose perez, deive garces, fredy aquino, morella lopez un elenco espectacular. direccion Yonna Cabrera 2010. </p>
+	   				         <p class="textoslide">
+	   				         	Es una historia donde el amor triunfa sobre un pasado marcado bajo la violencia, dirigido por Yonna Cabrera con la actuación protagónica de Carlos Eduardo Pegés y Matías Tineo. Trabajo universitario con un excelente equipo. Ganador de dos Oscarcitos mejor dirección y mejor producción.</p>
 	   				     </div></li>
 	    			<li><img src="{{ STATIC_URL }}img/img4.png" alt="" width="1000"/>
 	    					 <div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Gira Amorsito Corazón</h3>
-	   				         <p class="textoslide">Actores reinaldo jose perez, deive garces, fredy aquino, morella lopez un elenco espectacular. direccion Yonna Cabrera 2010. </p>
+	   				         <p class="textoslide">Más que una comedia romántica, una comedia bolero. Película de Carmen Roa. Elenco: Elaiza gil, Reinaldo José Pérez, José Luis Useche, Norelys Rodríguez, Carmen Landaeta, entre otros. (Gira de medios en coordinación de Leonardo Ibarra y Yonna Cabrera). </p>
 	   				     </div>
 	    			</li>
 				</ul>
@@ -67,7 +70,7 @@ Duranjo Web
 		</section>
 		<section class="nosotros" id="nosotros">	
 			<div class="titulonosotros"> <h2> Nosotros</h2></div>
-			<div class="textonosotros"> Un texto es una composición de signos codificado en un sistema de escritura (como un alfabeto) que forma una unidad de sentido . Su tamaño puede ser variable. También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</div>
+			<div class="textonosotros"> Ángeles de Piedra es una compañía productora de Cine, Radio y Televisión en Venezuela, fundada en 1995 por Emerita Fuenmayor. Ha realizado proyectos audiovisuales de todo tipo abarcando cortometrajes, largometrajes, documentales, entre otros. Además cuenta actualmente con producciones en radio y televisión.</div>
 		</section>
 </div>		
 		<section class="producciones" id="producciones">	
@@ -75,7 +78,7 @@ Duranjo Web
 			<div class="wrapper centrar">
 				 <div class="hombre"></div>
 				 <div class="textoshowtime">
-				 	<div class="logostitulo"><h2> ShowTime</h2></div>
+				 	<div class="logostitulo logoshow"><h2> ShowTime</h2></div>
 				 	No te pierdas nuestro programa de radio y televisión "ShowTime" transmitido por GlobalTV y Feria 106.9.
 				 	<div class="botonshow">IR AL SITIO WEB</div>
 				 </div>
@@ -90,7 +93,7 @@ Duranjo Web
 			 	<a href="{{ item.get_absolute_url }}">
 			 		<div class="publicacion">
 			 			<div class="fecha">{{ item.creation_date|date:"SHORT_DATE_FORMAT" }}</div>
-			 			<img src="{{ MEDIA_URL }}{{item.image}}" width ="304" height="230">
+			 			<img src="{{ MEDIA_URL }}{{item.image}}" width ="304" height="230" alt="{{ item.title }}">
 			 		   	<div class="titulopublicacion">{{ item.title }}</div>
 			 	   </div>
 				</a>
@@ -156,39 +159,44 @@ Duranjo Web
 					</div>
 				</form>
 			{% endif %}
-						<div class="columnascotact">
-						<div class="tituloOpcionInfo"><div class="facebook"></div>Facebook:</div>
-						<div class="infoOpcion">
-							<div class="fb-like" data-href="http://www.facebook.com/angelesdepiedraproductora" data-send="false" data-width="271" 
-							data-show-faces="true" data-font="tahoma" data-action="recommend"></div>
-						</div>
+
+	</section>
+	<div class="wrapper">	
+		<div class="columnascotact">
+			<div class="tituloOpcionInfo"><div class="facebook"></div>Facebook:</div>
+			<div class="infoOpcion">
+			<div class="fb-like" data-href="http://www.facebook.com/angelesdepiedraproductora" data-send="false" data-width="271" 
+			data-show-faces="true" data-font="tahoma" data-action="recommend"></div>
+			</div>
 					</div>
-					<div class="columnascotact ">
-<!-- Place this tag where you want the widget to render. -->
-<div class="g-page" data-href="//plus.google.com/102130462023897322315" data-theme="dark" data-layout="landscape" data-rel="publisher"></div>
+		<div class="columnascotact ">
+					<!-- Place this tag where you want the widget to render. -->
+				<div class="g-page" data-href="//plus.google.com/102130462023897322315" data-theme="dark" data-layout="landscape" data-rel="publisher"></div>
 
-<!-- Place this tag after the last widget tag. -->
-<script type="text/javascript">
-  window.___gcfg = {lang: 'es'};
+						<!-- Place this tag after the last widget tag. -->
+						<script type="text/javascript">
+ 							 window.___gcfg = {lang: 'es'};
 
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ 							 (function() {
+   						 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
-			</div>
 		</div>
-
-	</section>	
+	</div>
+		</div>
+	
 </div>	
 
 <!-- slider -->
 <script>
     $(function () {
         $('.rs-slider').refineSlide({
-            maxWidth: 1000,
+            maxWidth: 1000,        
             autoPlay           : true, // set to native image width (px)
+            delay                 : 10000, 
+
         });
     });
 </script>
