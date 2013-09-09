@@ -80,9 +80,9 @@ nav li:first-child a{
 }
 
 .smaller{
-		background-size: 180px 94px;
-		width: 180px;
-		height: 94px;
+	background-size: 180px 94px;
+	width: 180px;
+	height: 94px;
 }
 
 /* Configuración back to top button */
