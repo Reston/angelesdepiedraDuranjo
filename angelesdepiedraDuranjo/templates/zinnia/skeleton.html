@@ -13,6 +13,18 @@
 		<link rel="stylesheet" type="text/css" media="print" href="{{ STATIC_URL }}zinnia/css/print.css" />
 		<link rel="stylesheet" href=" {{ STATIC_URL }}css/index.css">
 {% endblock %}
+{% block js %}
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script async type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
+{% endblock %}
+{% block navi %} 
+		<ul>
+			<li id="homeMenu" class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+			<li id="nosotrosMenu" class="works"><a href="{% url 'homepageindex' %}#nosotros" >Nosotros</a></li>
+			<li id="produccionesMenu" class="services"><a href="{% url 'homepageindex' %}#producciones">Producciones</a></li>
+			<li id="contactoMenu" class="contact"><a href="{% url 'homepageindex' %}#contacto">Contacto</a></li>
+		</ul>
+{% endblock%}
 {% block contenido %}
 <section class="zinnia {% block body-class %}{% endblock %}">
 <div class="wrapper">
