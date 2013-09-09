@@ -42,6 +42,7 @@
 	color: rgb(201, 190, 190);
 	font-size: 14px;
 }
+
 .bcorreo{
 	width: 43px;
 	height: 44px;
@@ -219,6 +220,9 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 	width: 80%;
 	color: white;
 }
+.back-top{
+	color: white;
+}
 .columnacontacto{
 	display: inline-block;
 	width: 49%;
@@ -234,7 +238,10 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 	width: 33%;
 	vertical-align: top;
 }
-
+.enviado{
+	color: white;
+	padding-bottom: 40px;
+}
 .campo input{
 	display: inline-block;
 	width: 71%;
@@ -291,6 +298,14 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 	text-align: center;
 	text-transform: uppercase;
 }
+.twitterbox{
+	padding-top: 4%;
+	text-align: center;
+}
+.facebox{
+	margin-top: 1%;
+}
+
 @media screen and (max-width: 1000px){
 	.logo{
 		width: 168px !important;
@@ -369,6 +384,10 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 }
 
 @media screen and (max-width: 480px) {
+	.columnascotact{
+		width: 100%;
+		text-align: center;
+	}
 	.bannerPrincipal{
 		margin-top: 13pc;
 	}

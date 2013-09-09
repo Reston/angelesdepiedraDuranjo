@@ -31,8 +31,8 @@
 	<div class="botonesSociales">
 		<ul>
 			 <a href="https://www.facebook.com/angelesdepiedraproductora" target="_blank"><li class="bface"></li></a>
-			<li class="btwitter"></li>
-			<li class="bcorreo"></li>
+			 <a href="https://twitter.com/AngelesdePiedra" target="_blank"><li class="btwitter"></li></a>	
+			  <a href="#contacto"><li class="bcorreo"></li></a>			 
 		</ul>
 	</div>	
 		<section class="bannerPrincipal">
@@ -112,15 +112,13 @@
 				<div class="lineacontacto"><h2 class="titulocontacto">Contacto</h2></div>
 					<div class="botonesSociales" id="socialcontacto">
 						<ul>	
-							<li class="bface"></li>
-							<li class="btwitter"></li>
-							<li class="bcorreo"></li>
+			 <a href="https://www.facebook.com/angelesdepiedraproductora" target="_blank"><li class="bface"></li></a>
+			 <a href="https://twitter.com/AngelesdePiedra" target="_blank"><li class="btwitter"></li></a>
 						</ul>	
 					</div>	
 				{% if success %}
 				<div class="mensajeenviado">
 					<div class="enviado">Su mensaje ha sido enviado correctamente, pronto nos pondremos en contacto con usted.</div>
-					<img class="sobre" src="{{ STATIC_URL }}img/sobre.png" alt="formulario de contacto">	
 				</div>
 				{% else %}
 				<form  class="cizquierda" action="#contacto" method="POST">
@@ -162,12 +160,8 @@
 
 	</section>
 	<div class="wrapper">	
-		<div class="columnascotact">
-			<div class="tituloOpcionInfo"><div class="facebook"></div>Facebook:</div>
-			<div class="infoOpcion">
-			<div class="fb-like" data-href="http://www.facebook.com/angelesdepiedraproductora" data-send="false" data-width="271" 
-			data-show-faces="true" data-font="tahoma" data-action="recommend"></div>
-			</div>
+		<div class="columnascotact facebox">
+<div class="fb-like-box" data-href="https://www.facebook.com/angelesdepiedraproductora" data-width="292" data-height="70" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 					</div>
 		<div class="columnascotact ">
 					<!-- Place this tag where you want the widget to render. -->
@@ -183,6 +177,11 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
+		</div>
+		<div class="columnascotact twitterbox">
+			<div class="infoOpcion">
+				<a href="https://twitter.com/AngelesdePiedra" class="twitter-follow-button" data-show-count="false" data-lang="en">Seguir a @AngelesdePiedra</a>
+			</div>
 		</div>
 	</div>
 		</div>
@@ -212,14 +211,14 @@
 		  })();
 		</script>
 	<!-- FACEBOOK SCRIPT -->
-			<div id="fb-root"></div>
-		<script async>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- TWITTER SCRIPT -->
 	<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	
