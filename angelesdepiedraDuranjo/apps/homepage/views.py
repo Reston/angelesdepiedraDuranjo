@@ -19,7 +19,7 @@ def index(request):
 			asunto = u'Por: %s mail: %s' % (cd['nombre'], cd['email'])
 			content = u'Email contacto: %s \nAsunto: %s \nTelefono: %s \nDescripcion: %s' % (cd['email'], asunto, cd['telefono'], cd['texto'])
 			print content
-			send_mail(asunto, content, 'info@duranjo.com', ['info@duranjo.com'])
+			send_mail(asunto, content, 'contacto@angelesdepiedra.com.ve', ['contacto@angelesdepiedra.com.ve'])
 	else:
 		form = contactForm()
 	ctx = {'form': form, 'success': success, 'entradas':entradas}

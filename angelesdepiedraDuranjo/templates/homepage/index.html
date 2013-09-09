@@ -9,14 +9,14 @@
 Ángeles de Piedra
 {% endblock%}
 {% block css%}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
-<link rel="stylesheet" href="{{ STATIC_URL }}css/refineslide.css">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/refineslide.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script async type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
-<script async type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/stickymenu.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/refineslide/jquery.refineslide.min.js"></script>
+<script async type="text/javascript" src="{% static 'js/adquiridos/back-top.js' %}"></script>
+<script async type="text/javascript" src="{% static 'js/adquiridos/stickymenu.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/adquiridos/refineslide/jquery.refineslide.min.js' %}"></script>
 {% endblock %}
 {% block navi %}
 		<ul>
@@ -39,27 +39,27 @@
 		<section class="bannerPrincipal">
 			<div class="wrapper">
 				<ul class="rs-slider">
-	   				 <li><img src="{{ STATIC_URL }}img/img1.png" alt="Jenny 24 Horas" width="1000"/>
+	   				 <li><img src="{% static 'img/img1.png' %}" alt="Jenny 24 Horas" width="1000"/>
 	   				         <div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Jenny 24 Horas</h3>
 	   				         <p class="textoslide">
 	   				         	Es la historia de una mujer que se debate entre la libertad y la protección de un hombre lleno de agresividad; con los grandes actores Reinaldo José Pérez, Morella López, Deive Garcés y Freddy Aquino. Dirección y actuación de Yonna Cabrera y música original de Agustín Espina, producción de Ángeles de Piedra.</p>
 	   				     </div>
 	   				         </li>
-	    			<li><img src="{{ STATIC_URL }}img/img2.png" alt="Mejor Mañana" width="1000" />
+	    			<li><img src="{% static 'img/img2.png' %}" alt="Mejor Mañana" width="1000" />
 	    					<div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Mejor Mañana</h3>
 	   				         <p class="textoslide">
 	   				         	La enfermedad de Margarita ha barrido con la mayoría de sus recuerdos; Pero no es un impedimento para Astolfo quién permanece cerca jugueteando con su alma. Elenco Yonna Cabrera y Fredy Marín. Bajo la coproducción de Mata de Mangos Producciones y Ángeles de Piedra.</p>
 	   				     </div>
 	    			</li>
-	    			<li><img src="{{ STATIC_URL }}img/img3.png" alt="Estragos del Tiempo" width="1000"/>
+	    			<li><img src="{% static 'img/img3.png' %}" alt="Estragos del Tiempo" width="1000"/>
 	    				   	 <div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Estragos del Tiempo</h3>
 	   				         <p class="textoslide">
 	   				         	Es una historia donde el amor triunfa sobre un pasado marcado bajo la violencia, dirigido por Yonna Cabrera con la actuación protagónica de Carlos Eduardo Pegés y Matías Tineo. Trabajo universitario con un excelente equipo. Ganador de dos Oscarcitos mejor dirección y mejor producción.</p>
 	   				     </div></li>
-	    			<li><img src="{{ STATIC_URL }}img/img4.png" alt="Gira Amorsito Corazón" width="1000"/>
+	    			<li><img src="{% static 'img/img4.png' %}" alt="Gira Amorsito Corazón" width="1000"/>
 	    					 <div class="rs-caption rs-bottom">
 	   				         <h3 class="tituloslide" style="margin-bottom: 15px">Gira Amorsito Corazón</h3>
 	   				         <p class="textoslide">Más que una comedia romántica, una comedia bolero. Película de Carmen Roa. Elenco: Elaiza gil, Reinaldo José Pérez, José Luis Useche, Norelys Rodríguez, Carmen Landaeta, entre otros. (Gira de medios en coordinación de Leonardo Ibarra y Yonna Cabrera). </p>
