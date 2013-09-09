@@ -48,6 +48,7 @@ nav ul li{
 	font-size: 16px;
 	text-transform: uppercase;
 	padding-left: 62px;
+	text-shadow: 1px 1px 1px #000;
 }
 nav a{
 	color: white;
@@ -100,7 +101,7 @@ nav li:first-child a{
 	font: 11px/100% Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: black;
+	color: white;
 
 	/* transition */
 	-webkit-transition: 1s;
